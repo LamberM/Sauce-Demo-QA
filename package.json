@@ -1,0 +1,22 @@
+{
+  "name": "github-profile-analyzer-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LamberM/Github-profile-analyzer-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LamberM/Github-profile-analyzer-tests/issues"
+  },
+  "homepage": "https://github.com/LamberM/Github-profile-analyzer-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
