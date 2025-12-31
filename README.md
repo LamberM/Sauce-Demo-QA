@@ -23,6 +23,7 @@
     * [View HTML report](#view-html-report)
 * [CI/CD](#cicd)
 * [TODO](#todo)
+* [Done](#done)
 * [Author](#author)
 
 ## About the Project
@@ -139,13 +140,14 @@ npx playwright show-report
 * Push to main branch
 * Pull requests
 # TODO
-* Test Plan
-* Test Scenarios
 * Test Case 
 * Look at CI/CD conf and possibly make changes
 * Create tests
 * Finish [Run specific test file](#run-specific-test-file)
 * Finish [Project Structure](#project-structure)
+# Done
+* Test Plan
+* Test Scenarios
 # Author
 **Marcin Lamberski**
  * [LinkedIn](https://www.linkedin.com/in/marcin-lamberski-067599240/) 
