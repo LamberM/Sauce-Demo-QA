@@ -1,0 +1,57 @@
+# Test Case: TC-SHOP-020
+## Title: Create checkout process without products
+
+**Scenario ID:** TC-SHOP-020
+
+**Priority:** High
+
+**Type:** Functional, Negative
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that checkout process will be cancel
+
+## Preconditions:
+- Moving into shopping cart 
+- Every button will work to pass through all checkout process correctly 
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+|button_id|[@id="shopping_cart_container"]|
+|button_id|[@id="checkout"]|
+|input_id=[@id="first-name"]|"John"|
+|input_id=[@id="last-name"]|"Doe"|
+|input_id=[@id="postal-code"]|"90210"|
+|input_id|[@id="continue"]|
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Shopping Cart icon" button| Navigate to /cart.html
+| 7 |Click "Checkout" button| Navigate to /checkout-step-one.html
+| 8 | Get error message| Get message "Error: FYour shipping cart is empty"|
+## Expected Result:
+- Checkout process will be cancel
+
+## Actual Result:
+_[To be filled during execution]_
+
+## Status:
+_[Pass/Fail/Blocked/Not Executed]_
+
+## Comments:
+_[Any observations]_

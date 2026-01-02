@@ -23,6 +23,7 @@ Verify the users will go into shopping cart
 - TC-SHOP-013: Navigate to cart without products
 - TC-SHOP-014: Remove product from cart
 - TC-SHOP-015: Remove all products (clear cart) 
+- TC-SHOP-016: Click continue shopping button
 
 ## Dependencies:
 - Database must be available

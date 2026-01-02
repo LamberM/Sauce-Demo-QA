@@ -20,9 +20,10 @@ Verify the users will checkout their order
 - Application is accessible
 
 ## Related Test Cases:
-- TC-SHOP-016: Create checkout process with products with correct data
-- TC-SHOP-017: Create checkout process with products with incorrect data
-- TC-SHOP-018: Create checkout process without products
+- TC-SHOP-017: Create checkout process with products and correct data
+- TC-SHOP-018: Create checkout process with products and empty data
+- TC-SHOP-019: Create checkout process with products and incorrect data
+- TC-SHOP-020: Create checkout process without products
 
 ## Dependencies:
 - Database must be available

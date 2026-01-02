@@ -1,0 +1,49 @@
+# Test Case: TC-SHOP-008
+## Title: Sort by price (high to low)
+**Scenario ID:** TC-SHOP-008
+
+**Priority:** Low
+
+**Type:** Functional, Positive
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that products will sort correctly
+
+## Preconditions:
+- Products sort by price (high to low)
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+| product_sort_container | holi |
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Change product_sort_container value on holi | Products sorted correctly
+
+## Expected Result:
+- Products sorted correctly
+
+## Actual Result:
+_[To be filled during execution]_
+
+## Status:
+_[Pass/Fail/Blocked/Not Executed]_
+
+## Comments:
+_[Any observations]_
