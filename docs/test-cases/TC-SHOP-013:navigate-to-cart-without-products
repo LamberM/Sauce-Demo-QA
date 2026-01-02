@@ -1,0 +1,49 @@
+# Test Case: TC-SHOP-013
+## Title: Navigate to cart without products 
+**Scenario ID:** TC-SHOP-013
+
+**Priority:** Medium
+
+**Type:** Functional, Positive
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that move into shopping cart correctly
+
+## Preconditions:
+- Moving into shopping cart 
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+|button_id|[@id="shopping_cart_container"]|
+
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Shopping Cart icon" button| Navigate to /cart.html
+## Expected Result:
+- Navigate to /cart.html correctly 
+
+## Actual Result:
+_[To be filled during execution]_
+
+## Status:
+_[Pass/Fail/Blocked/Not Executed]_
+
+## Comments:
+_[Any observations]_

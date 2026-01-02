@@ -1,0 +1,63 @@
+# Test Case: TC-SHOP-018
+## Title: Create checkout process with products and empty data
+**Scenario ID:** TC-SHOP-018
+
+**Priority:** High
+
+**Type:** Functional, Negative
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that checkout process will be cancel
+
+## Preconditions:
+- Products add into shopping cart
+- Moving into shopping cart 
+- Every button will work to pass through all checkout process correctly 
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+| button_id |[@id="add-to-cart-sauce-labs-fleece-jacket"],[@id="add-to-cart-sauce-labs-bike-light"], [@id="add-to-cart-sauce-labs-bolt-t-shirt"]|
+|button_id|[@id="shopping_cart_container"]|
+|button_id|[@id="checkout"]|
+|input_id=[@id="first-name"]|""|
+|input_id=[@id="last-name"]|""|
+|input_id=[@id="postal-code"]|""|
+|input_id|[@id="continue"]|
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Add to cart " button | Products added correctly
+| 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
+| 8 |Click "Checkout" button| Navigate to /checkout-step-one.html
+| 9 |Enter **""** into input_id=[@id="first-name"] | First name  appears in field|
+| 10 | Enter **""** into input_id=[@id="last-name"] | Last name  appears in field|
+| 11 | Enter **""** into input_id=[@id="postal-code"] | Postal code appears in field|
+| 12 | Click "Continue" button| Navigate to /checkout-step-two.html
+| 13 | Get error message| Get message "Error: First Name is required"|
+## Expected Result:
+- Checkout process will be cancel
+
+## Actual Result:
+_[To be filled during execution]_
+
+## Status:
+_[Pass/Fail/Blocked/Not Executed]_
+
+## Comments:
+_[Any observations]_
