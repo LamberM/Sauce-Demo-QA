@@ -8,7 +8,7 @@
 
 **Date:** 2025-12-31
 
-**Last updated:** 2025-12-31
+**Last updated:** 2025-01-06
 
 ## Description:
 Verify that products sort by name and price

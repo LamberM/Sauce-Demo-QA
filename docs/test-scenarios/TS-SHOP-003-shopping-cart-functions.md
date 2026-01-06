@@ -1,5 +1,5 @@
 # Test Scenario: TS-SHOP-003
-## Title: Shopping cart
+## Title: Shopping cart functions
 **Module:** Shopping
 
 **Priority:** Medium
@@ -8,7 +8,7 @@
 
 **Date:** 2025-12-31
 
-**Last updated:** 2025-12-31
+**Last updated:** 2025-01-06
 
 ## Description:
 Verify the users will go into shopping cart
