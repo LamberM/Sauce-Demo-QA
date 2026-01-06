@@ -25,8 +25,8 @@ Verify that products will add and move into shopping cart correctly
 
 | Field    | Value              |
 |----------|-------------------|
-| button_id |[@id="add-to-cart-sauce-labs-fleece-jacket"],[@id="add-to-cart-sauce-labs-bike-light"], [@id="add-to-cart-sauce-labs-bolt-t-shirt"]|
-|button_id|[@id="shopping_cart_container"]|
+| locator = [data-test^="add-to-cart-"]|random|
+|locator|'[data-test="checkout"]'|
 
 
 ## Test Steps:
@@ -35,19 +35,12 @@ Verify that products will add and move into shopping cart correctly
 | 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
 | 2 | Enter Login: standard_user| Login appears in field |
 | 3 | Enter password: secret_sauce  | Password masked with bullets |
-| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 4 | Click "Login" button | User should log in|
 | 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
 | 6 | Click "Add to cart " button | Products added correctly
 | 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
 ## Expected Result:
 - Products added correctly
 - Navigate to /cart.html correctly 
-
-## Actual Result:
-_[To be filled during execution]_
-
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Pass

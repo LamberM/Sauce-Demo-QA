@@ -1,5 +1,5 @@
 # Test Case: TC-SHOP-009
-## Title: Adding one different product into empty cart 
+## Title: Adding one product into empty cart 
 **Scenario ID:** TC-SHOP-009
 
 **Priority:** Medium
@@ -24,7 +24,7 @@ Verify that product will add into empty shopping cart correctly
 
 | Field    | Value              |
 |----------|-------------------|
-| button_id | //*[@id="add-to-cart-sauce-labs-fleece-jacket"] |
+| locator | '#add-to-cart-sauce-labs-fleece-jacket' |
 
 ## Test Steps:
 | Step | Action | Expected Result |
@@ -32,18 +32,12 @@ Verify that product will add into empty shopping cart correctly
 | 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
 | 2 | Enter Login: standard_user| Login appears in field |
 | 3 | Enter password: secret_sauce  | Password masked with bullets |
-| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 4 | Click "Login" button | User should log in|
 | 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
 | 6 | Click "Add to cart " button | Products added correctly
 
 ## Expected Result:
 - Product added correctly
 
-## Actual Result:
-_[To be filled during execution]_
-
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Pass

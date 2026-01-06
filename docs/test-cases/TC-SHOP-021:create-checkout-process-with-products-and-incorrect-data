@@ -1,6 +1,6 @@
-# Test Case: TC-SHOP-019
+# Test Case: TC-SHOP-021
 ## Title: Create checkout process with products and incorrect data
-**Scenario ID:** TC-SHOP-019
+**Scenario ID:** TC-SHOP-021
 
 **Priority:** High
 
@@ -26,13 +26,15 @@ Verify that checkout process will be cancel
 
 | Field    | Value              |
 |----------|-------------------|
-| button_id |[@id="add-to-cart-sauce-labs-fleece-jacket"],[@id="add-to-cart-sauce-labs-bike-light"], [@id="add-to-cart-sauce-labs-bolt-t-shirt"]|
-|button_id|[@id="shopping_cart_container"]|
-|button_id|[@id="checkout"]|
-|input_id=[@id="first-name"]|"123"|
-|input_id=[@id="last-name"]|"123"|
-|input_id=[@id="postal-code"]|"London"|
-|input_id|[@id="continue"]|
+| Field    | Value              |
+|----------|-------------------|
+| locator = '[data-test^="add-to-cart-"]' |3|
+|locator|'[data-test="shopping-cart-link"]'|
+|locator|'[data-test="checkout"]'|
+|locator='[data-test="firstName"]'|"123"|
+|locator='[data-test="lastName"]'|"123"|
+|locator='[data-test="postalCode"]'|"London"|
+|locator|[data-test="continue"]|
 
 ## Test Steps:
 | Step | Action | Expected Result |
@@ -40,24 +42,21 @@ Verify that checkout process will be cancel
 | 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
 | 2 | Enter Login: standard_user| Login appears in field |
 | 3 | Enter password: secret_sauce  | Password masked with bullets |
-| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 4 | Click "Login" button | User should log in|
 | 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
 | 6 | Click "Add to cart " button | Products added correctly
 | 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
 | 8 |Click "Checkout" button| Navigate to /checkout-step-one.html
-| 9 |Enter **"123"** into input_id=[@id="first-name"] | First name  appears in field|
-| 10 | Enter **"123"** into input_id=[@id="last-name"] | Last name  appears in field|
-| 11 | Enter **"London"** into input_id=[@id="postal-code"] | Postal code appears in field|
-| 12 | Click "Continue" button| Navigate to /checkout-step-two.html
+| 9 |Enter **"123"** into locator = [data-test="firstName"]| First name  appears in field|
+| 10 | Enter **"123"** into locator='[data-test="lastName"] | Last name  appears in field|
+| 11 | Enter **"London"** into locator='[data-test="postalCode"] | Postal code appears in field|
+| 12 | Click "Continue" button| User will get message from new step
 | 13 | Get error message| Get message "Error: First Name is incorrect"|
 ## Expected Result:
 - Checkout process will be cancel
 
 ## Actual Result:
-_[To be filled during execution]_
+With incorrect data, checkout process will blocked with error message. We need working validation. Bug is reported and get new number.
 
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Fail

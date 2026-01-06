@@ -1,10 +1,10 @@
-# Test Case: TC-SHOP-017
-## Title: Create checkout process with products with correct data
-**Scenario ID:** TC-SHOP-017
+# Test Case: TC-SHOP-023
+## Title: Cancel checkout process
+**Scenario ID:** TC-SHOP-023
 
 **Priority:** High
 
-**Type:** Functional, Positive
+**Type:** Functional, Negative
 
 **Automation:** Yes
 
@@ -23,7 +23,6 @@ Verify that checkout process will be correct
 - Every button will work to pass through all checkout process correctly 
 
 ## Test Data:
-
 | Field    | Value              |
 |----------|-------------------|
 | locator = '[data-test^="add-to-cart-"]' |3|
@@ -33,6 +32,7 @@ Verify that checkout process will be correct
 |locator='[data-test="lastName"]'|"Doe"|
 |locator='[data-test="postalCode"]'|"90210"|
 |locator|[data-test="continue"]|
+|locator|[data-test="cancel"]|
 
 
 ## Test Steps:
@@ -50,9 +50,9 @@ Verify that checkout process will be correct
 | 10 | Enter **"Doe"** into locator=[data-test="lastName"] | Last name  appears in field|
 | 11 | Enter **"90210"** into locator=[data-test="postalCode"] | Postal code appears in field|
 | 12 | Click "Continue" button| Navigate to /checkout-step-two.html
-| 13 | Click "Finish" button | Navigate to /checkout-complete.html|
+| 13 | Click "Cancel" button | Navigate to /cart.html|
 ## Expected Result:
-- Checkout process will be correct
+- Checkout process will be cancel
 
 ## Status:
 Pass

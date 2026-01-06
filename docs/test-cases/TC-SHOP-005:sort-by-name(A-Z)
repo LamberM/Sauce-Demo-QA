@@ -32,18 +32,12 @@ Verify that products will sort correctly
 | 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
 | 2 | Enter Login: standard_user| Login appears in field |
 | 3 | Enter password: secret_sauce  | Password masked with bullets |
-| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 4 | Click "Login" button | User should log in|
 | 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
 | 6 | Change product_sort_container value on az | Products sorted correctly
 
 ## Expected Result:
 - Products sorted correctly
 
-## Actual Result:
-_[To be filled during execution]_
-
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Pass

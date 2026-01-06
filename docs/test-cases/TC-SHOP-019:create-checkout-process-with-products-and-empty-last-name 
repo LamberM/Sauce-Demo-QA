@@ -1,10 +1,10 @@
-# Test Case: TC-SHOP-017
-## Title: Create checkout process with products with correct data
-**Scenario ID:** TC-SHOP-017
+# Test Case: TC-SHOP-019
+## Title: Create checkout process with products and last name
+**Scenario ID:** TC-SHOP-019
 
 **Priority:** High
 
-**Type:** Functional, Positive
+**Type:** Functional, Negative
 
 **Automation:** Yes
 
@@ -15,7 +15,7 @@
 **Status:** Approved
 
 ## Objective:
-Verify that checkout process will be correct
+Verify that checkout process will be cancel
 
 ## Preconditions:
 - Products add into shopping cart
@@ -30,10 +30,9 @@ Verify that checkout process will be correct
 |locator|'[data-test="shopping-cart-link"]'|
 |locator|'[data-test="checkout"]'|
 |locator='[data-test="firstName"]'|"John"|
-|locator='[data-test="lastName"]'|"Doe"|
+|locator='[data-test="lastName"]'|""|
 |locator='[data-test="postalCode"]'|"90210"|
 |locator|[data-test="continue"]|
-
 
 ## Test Steps:
 | Step | Action | Expected Result |
@@ -46,13 +45,13 @@ Verify that checkout process will be correct
 | 6 | Click "Add to cart " button | Products added correctly
 | 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
 | 8 |Click "Checkout" button| Navigate to /checkout-step-one.html
-| 9 |Enter **"John"** into locator=[data-test="firstName"] | First name  appears in field|
-| 10 | Enter **"Doe"** into locator=[data-test="lastName"] | Last name  appears in field|
-| 11 | Enter **"90210"** into locator=[data-test="postalCode"] | Postal code appears in field|
+| 9 |Enter **"John"** into locator='[data-test="firstName"]' | First name  appears in field|
+| 10 | Enter **""** into locator='[data-test="lastName"]' | Last name  appears in field|
+| 11 | Enter **"90210"** into locator='[data-test="postalCode"]' | Postal code appears in field|
 | 12 | Click "Continue" button| Navigate to /checkout-step-two.html
-| 13 | Click "Finish" button | Navigate to /checkout-complete.html|
+| 13 | Get error message| Get message "Error: First Name is required"|
 ## Expected Result:
-- Checkout process will be correct
+- Checkout process will be cancel
 
 ## Status:
 Pass
