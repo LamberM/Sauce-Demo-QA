@@ -1,7 +1,7 @@
-# Test Case: TC-SHOP-020
+# Test Case: TC-SHOP-022
 ## Title: Create checkout process without products
 
-**Scenario ID:** TC-SHOP-020
+**Scenario ID:** TC-SHOP-022
 
 **Priority:** High
 
@@ -26,12 +26,13 @@ Verify that checkout process will be cancel
 
 | Field    | Value              |
 |----------|-------------------|
-|button_id|[@id="shopping_cart_container"]|
-|button_id|[@id="checkout"]|
-|input_id=[@id="first-name"]|"John"|
-|input_id=[@id="last-name"]|"Doe"|
-|input_id=[@id="postal-code"]|"90210"|
-|input_id|[@id="continue"]|
+|locator|'[data-test="shopping-cart-link"]'|
+|locator|'[data-test="checkout"]'|
+|locator='[data-test="firstName"]'|"John"|
+|locator='[data-test="lastName"]'|"Doe"|
+|locator='[data-test="postalCode"]'|"90210"|
+|locator|[data-test="continue"]|
+
 
 ## Test Steps:
 | Step | Action | Expected Result |
@@ -39,19 +40,16 @@ Verify that checkout process will be cancel
 | 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
 | 2 | Enter Login: standard_user| Login appears in field |
 | 3 | Enter password: secret_sauce  | Password masked with bullets |
-| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+| 4 | Click "Login" button | User should log in|
 | 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
 | 6 | Click "Shopping Cart icon" button| Navigate to /cart.html
-| 7 |Click "Checkout" button| Navigate to /checkout-step-one.html
-| 8 | Get error message| Get message "Error: FYour shipping cart is empty"|
+| 7 |Click "Checkout" button| User will get message from new step
+| 8 | Get error message| Get message "Error: Your shipping cart is empty"|
 ## Expected Result:
 - Checkout process will be cancel
 
 ## Actual Result:
-_[To be filled during execution]_
+Without products in cart, checkout process will blocked with error message. We need validation it. Bug is reported and get new number.
 
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Fail

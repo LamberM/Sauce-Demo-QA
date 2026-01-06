@@ -35,11 +35,5 @@ Verify that user can't successfully login, because field was empty
 ## Expected Result:
 - User unsuccessfully authenticated
 
-## Actual Result:
-_[To be filled during execution]_
-
 ## Status:
-_[Pass/Fail/Blocked/Not Executed]_
-
-## Comments:
-_[Any observations]_
+Pass 

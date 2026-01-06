@@ -141,13 +141,14 @@ npx playwright show-report
 * Pull requests
 # TODO
 * Look at CI/CD conf and possibly make changes
-* Create tests
 * Finish [Run specific test file](#run-specific-test-file)
 * Finish [Project Structure](#project-structure)
 # Done
 * Test Plan
 * Test Scenarios
 * Test Case 
+* Create POM
+* Create tests
 # Author
 **Marcin Lamberski**
  * [LinkedIn](https://www.linkedin.com/in/marcin-lamberski-067599240/) 
