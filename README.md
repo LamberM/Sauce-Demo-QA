@@ -73,7 +73,67 @@ This portfolio project was created to demonstrate:
 |GitHub Actions| CI/CD pipeline|
 
 # Project Structure
-
+```
+SAUCE-DEMO-QA/
+├── 📁 .github/workflows/
+│   └── playwright.yml
+|
+├── 📁 docs/    
+|   |────  📁 test-cases/
+|   |       │──── TC-AUTH-001:valid-login-credentials
+|   |       │──── TC-AUTH-002:invalid-password
+|   |       |──── TC-AUTH-003:empty-field
+|   |       |──── TC-AUTH-004:locked-account
+|   |       |──── TC-SHOP-005:sort-by-name(A-Z)
+|   |       |──── TC-SHOP-006:sort-by-name(Z-A)
+|   |       |──── TC-SHOP-007:sort-low-to-high
+|   |       |──── TC-SHOP-008:sort-high-to-low
+|   |       |──── TC-SHOP-009:add-one-product-into-empty-cart  
+|   |       |──── TC-SHOP-010:add-multiple-product-into-cart
+|   |       |──── TC-SHOP-011:add-all-product-into-cart
+|   |       |──── TC-SHOP-012:navigate-to-cart-with-products  
+|   |       |──── TC-SHOP-013:navigate-to-cart-without-products
+|   |       |──── TC-SHOP-014:remove-product-from-cart
+|   |       |──── TC-SHOP-015:remove-all-products-from-cart  
+|   |       |──── TC-SHOP-016:click-continue-shopping-button
+|   |       |──── TC-SHOP-017:create-checkout-process-with-products-and-correct-data 
+|   |       |──── TC-SHOP-018:create-checkout-process-with-products-and-empty-first-name  
+|   |       |──── TC-SHOP-019:create-checkout-process-with-products-and-empty-last-name 
+|   |       |──── TC-SHOP-020:create-checkout-process-with-products-and-empty-postal-code 
+|   |       |──── TC-SHOP-021:create-checkout-process-with-products-and-incorrect-data 
+|   |       |──── TC-SHOP-022:create-checkout-process-without-products                  
+|   │       └──── TC-SHOP-023:cancel-checkout-process    
+|   |────  📁 test-scenarios/
+|   |       │──── TS-AUTH-001-user-login-process.md
+|   |       │──── TS-SHOP-001-sorting-product.md
+|   |       |──── TS-SHOP-002-adding-product.md 
+|   |       |──── TS-SHOP-003-shopping-cart-functions.md                
+|   │       └──── TS-SHOP-004-checkout-process.md                                  
+│   ├── TEST_SCENARIOS.md          
+│   ├── TEST_CASES.md              
+│   └── TEST_PLAN.md
+|   
+├── 📁 src/  
+├── 📁 tests/
+|   |──── 📁 pages/
+|   |       |──── BasePage.ts              
+|   |       │──── CheckoutPage.ts
+|   |       │──── InventoryPage.ts
+|   |       |──── LoginPage.ts                
+|   │       └──── ShoppingPage.ts                        
+│   |
+|   ├── adding-products.spec.ts              
+│   ├── checkout-process.spec.ts          
+│   ├── login.spec.ts               
+│   ├── shopping-cart.spec.ts           
+│   └── sorting-products.spec.ts                
+|         
+├── .gitignore 
+├── package-lock.json   
+├── package.json   
+├── playwright.config.ts                                         
+└── README.md                   
+```
 # Getting Started
 
 ### Prerequisites:
@@ -102,8 +162,11 @@ npx playwright install
 npm test
 ```
 ### Run specific test file
+**For example:**
 ```
+npx playwright test adding-products.spec.ts
 ```
+**Instead of adding-products.spec.ts u may use other name test**
 ### Run tests in headed mode (see browser)
 ```sh 
 npx playwright test --headed
@@ -141,14 +204,14 @@ npx playwright show-report
 * Pull requests
 # TODO
 * Look at CI/CD conf and possibly make changes
-* Finish [Run specific test file](#run-specific-test-file)
-* Finish [Project Structure](#project-structure)
 # Done
 * Test Plan
 * Test Scenarios
 * Test Case 
 * Create POM
 * Create tests
+* Finish [Run specific test file](#run-specific-test-file)
+* Finish [Project Structure](#project-structure)
 # Author
 **Marcin Lamberski**
  * [LinkedIn](https://www.linkedin.com/in/marcin-lamberski-067599240/) 
