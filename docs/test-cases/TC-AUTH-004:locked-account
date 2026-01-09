@@ -1,0 +1,44 @@
+# Test Case: TC-AUTH-004
+## Title: Locked account
+**Scenario ID:** TS-AUTH-004
+
+**Priority:** High
+
+**Type:** Functional, Negative
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that user can't successfully login, because password was incorrect
+
+## Preconditions:
+- User account exists 
+- User account is locked out 
+- User is on login page
+- User is not currently logged in
+
+## Test Data:
+| Field    | Value              |
+|----------|-------------------|
+| Login   | locked_out_user |
+| Password | secret_sauce        |
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: locked_out_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should get message "Epic sadface: Sorry, this user has been locked out."|
+
+## Expected Result:
+- User unsuccessfully authenticated
+
+## Status:
+Pass 

@@ -1,0 +1,39 @@
+# Test Case: TC-AUTH-003
+## Title: Empty field
+**Scenario ID:** TS-AUTH-003
+
+**Priority:** High
+
+**Type:** Functional, Negative
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that user can't successfully login, because field was empty
+
+## Preconditions:
+- none
+
+## Test Data:
+| Field    | Value              |
+|----------|-------------------|
+| Login   |  |
+| Password |         |
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Click "Login" button | User should get message "Epic sadface: Username is required"|
+
+## Expected Result:
+- User unsuccessfully authenticated
+
+## Status:
+Pass 

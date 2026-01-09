@@ -1,0 +1,62 @@
+# Test Case: TC-SHOP-021
+## Title: Create checkout process with products and incorrect data
+**Scenario ID:** TC-SHOP-021
+
+**Priority:** High
+
+**Type:** Functional, Negative
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that checkout process will be cancel
+
+## Preconditions:
+- Products add into shopping cart
+- Moving into shopping cart 
+- Every button will work to pass through all checkout process correctly 
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+| Field    | Value              |
+|----------|-------------------|
+| locator = '[data-test^="add-to-cart-"]' |3|
+|locator|'[data-test="shopping-cart-link"]'|
+|locator|'[data-test="checkout"]'|
+|locator='[data-test="firstName"]'|"123"|
+|locator='[data-test="lastName"]'|"123"|
+|locator='[data-test="postalCode"]'|"London"|
+|locator|[data-test="continue"]|
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should log in|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Add to cart " button | Products added correctly
+| 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
+| 8 |Click "Checkout" button| Navigate to /checkout-step-one.html
+| 9 |Enter **"123"** into locator = [data-test="firstName"]| First name  appears in field|
+| 10 | Enter **"123"** into locator='[data-test="lastName"] | Last name  appears in field|
+| 11 | Enter **"London"** into locator='[data-test="postalCode"] | Postal code appears in field|
+| 12 | Click "Continue" button| User will get message from new step
+| 13 | Get error message| Get message "Error: First Name is incorrect"|
+## Expected Result:
+- Checkout process will be cancel
+
+## Actual Result:
+With incorrect data, checkout process will blocked with error message. We need working validation. Bug is reported and get new number.
+
+## Status:
+Fail

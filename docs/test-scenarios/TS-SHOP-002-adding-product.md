@@ -1,0 +1,29 @@
+# Test Scenario: TS-SHOP-002
+## Title: Adding Product 
+**Module:** Shopping
+
+**Priority:** Medium
+
+**Created by:** Marcin Lamberski
+
+**Date:** 2025-12-31
+
+**Last updated:** 2025-01-06
+
+## Description:
+Verify that products will add from catalog to shopping cart
+
+## Preconditions:
+- Products exists database
+- Application is accessible
+
+## Related Test Cases:
+- TC-SHOP-009: Adding one product into empty cart 
+- TC-SHOP-010: Adding multiple products into cart 
+- TC-SHOP-011: Adding all products into cart
+
+## Dependencies:
+- Database must be available
+
+## Test Data Requirements:
+- Products active in the site 

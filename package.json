@@ -1,20 +1,34 @@
 {
-  "name": "github-profile-analyzer-tests",
+  "name": "sauce-demo-qa",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Playwright E2E tests with TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "report": "playwright show-report",
+    "codegen:url": "playwright codegen http://localhost:3000",
+    "install:browsers": "playwright install --with-deps"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LamberM/Github-profile-analyzer-tests.git"
+    "url": "git+https://github.com/LamberM/Sauce-Demo-QA.git"
   },
-  "keywords": [],
-  "author": "",
+    "keywords": [
+    "playwright",
+    "typescript",
+    "e2e",
+    "testing"
+  ],
+  "author": "Marcin Lamberski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LamberM/Github-profile-analyzer-tests/issues"
+    "url": "https://github.com/LamberM/Sauce-Demo-QA/issues"
   },
-  "homepage": "https://github.com/LamberM/Github-profile-analyzer-tests#readme",
+  "homepage": "https://github.com/LamberM/Sauce-Demo-QA#readme",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
     "@types/node": "^25.0.3"

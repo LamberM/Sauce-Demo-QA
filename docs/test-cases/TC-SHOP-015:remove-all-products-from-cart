@@ -1,0 +1,49 @@
+# Test Case: TC-SHOP-015
+## Title: Remove product from cart
+**Scenario ID:** TC-SHOP-015
+
+**Priority:** Medium
+
+**Type:** Functional, Positive
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that products will add, navigate into shopping cart. After moving into shopping cart throw out all products.
+
+## Preconditions:
+- Products add into shopping cart
+- Moving into shopping cart 
+- Remove all products from shopping cart
+
+## Test Data:
+| Field    | Value              |
+|----------|-------------------|
+| locator = '[data-test^="add-to-cart-"]' |all|
+|locator|[data-test="checkout"]|
+|locator = [data-test^="remove-"]|all|
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should log in|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Add to cart " button | Products added correctly
+| 7 | Click "Shopping Cart icon" button| Navigate to /cart.html
+| 8 | Click "Remove" button | Products deleted correctly
+## Expected Result:
+- Products added correctly
+- Navigate to /cart.html correctly 
+- Products remove from shopping cart
+
+## Status:
+Pass

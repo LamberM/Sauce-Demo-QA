@@ -1,0 +1,43 @@
+# Test Case: TC-SHOP-011
+## Title: Adding multiple products into cart 
+**Scenario ID:** TC-SHOP-011
+
+**Priority:** Medium
+
+**Type:** Functional, Positive
+
+**Automation:** Yes
+
+**Author:** Marcin Lamberski
+
+**Created:** 2025-12-31
+
+**Status:** Approved
+
+## Objective:
+Verify that all products will add into shopping cart correctly
+
+## Preconditions:
+- Products add into shopping cart
+
+## Test Data:
+
+| Field    | Value              |
+|----------|-------------------|
+| locator |'[data-test^="add-to-cart-"]'|
+
+## Test Steps:
+| Step | Action | Expected Result |
+|------|--------|----------------|
+| 1 | Navigate to https://www.saucedemo.com/ | Login page displays |
+| 2 | Enter Login: standard_user| Login appears in field |
+| 3 | Enter password: secret_sauce  | Password masked with bullets |
+| 4 | Click "Login" button | User should log in|
+| 5 | Verify login successful | Navigate https://www.saucedemo.com/inventory.html |
+| 6 | Click "Add to cart " button | Products added correctly
+
+## Expected Result:
+- Products added correctly
+
+## Status:
+Pass

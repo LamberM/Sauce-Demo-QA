@@ -1,0 +1,33 @@
+# Test Scenario: TS-SHOP-003
+## Title: Shopping cart functions
+**Module:** Shopping
+
+**Priority:** Medium
+
+**Created by:** Marcin Lamberski
+
+**Date:** 2025-12-31
+
+**Last updated:** 2025-01-06
+
+## Description:
+Verify the users will go into shopping cart
+
+## Preconditions:
+- Products exists database
+- Shopping cart is available
+- Application is accessible
+
+## Related Test Cases:
+- TC-SHOP-012: Navigate to cart with products 
+- TC-SHOP-013: Navigate to cart without products
+- TC-SHOP-014: Remove product from cart
+- TC-SHOP-015: Remove all products (clear cart) 
+- TC-SHOP-016: Click continue shopping button
+
+## Dependencies:
+- Database must be available
+
+## Test Data Requirements:
+- Products active in the site 
+- Shopping cart page is working
