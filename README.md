@@ -194,16 +194,15 @@ npx playwright show-report
 **This project includes GitHub Actions workflow that automatically:**
 
 * Runs all tests on every push/pull request
-* Tests across multiple browsers (Chromium, Firefox, WebKit)
+* Tests across multiple browsers (Chromium, Firefox)
 * Generates and uploads test reports
 * Notifies about test failures
 
 **Workflow runs on:** 
 
-* Push to main branch
+* Push to main,develop branches
 * Pull requests
 # TODO
-* Look at CI/CD conf and possibly make changes
 # Done
 * Test Plan
 * Test Scenarios
@@ -212,6 +211,7 @@ npx playwright show-report
 * Create tests
 * Finish [Run specific test file](#run-specific-test-file)
 * Finish [Project Structure](#project-structure)
+* Changes in CI/CD configs
 # Author
 **Marcin Lamberski**
  * [LinkedIn](https://www.linkedin.com/in/marcin-lamberski-067599240/) 
